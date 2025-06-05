@@ -21,7 +21,7 @@ accountCity = 'bakolia ctg'
 // prefer not use var becuse of issue in block scope and functional scope.what is block and functional scope knowing the next..... 
 
 
-// REAL WORLD EXAMPLE
+// REAL WORLD EXAMPLE 
 
 const myName = 'Ibrahim Abdulllah'
 const myInstitute = "iiuc"
