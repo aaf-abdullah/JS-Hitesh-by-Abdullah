@@ -60,16 +60,39 @@ let negValue = - value1
 let str1 = 'hey '
 let str2 = "abdulah"
 let str3 = str1 + str2
-console.log(str3); //hey abdullah
+// console.log(str3); //hey abdullah
 
-console.log("3" + 2); //32
-console.log(2 + "3"); //23
-console.log('2' + 2); //2
-console.log("3" + 2 + 3); //323
-console.log(4 + 2 + "3"); //43
-console.log( (3 + 4) * 5 % 3); //2
- console.log(+true);//1
-console.log(+""); //0
+// console.log("3" + 2); //32
+// console.log(2 + "3"); //23
+// console.log('2' + 2); //2
+// console.log("3" + 2 + 3); //323
+// console.log(4 + 2 + "3"); //43
+// console.log( (3 + 4) * 5 % 3); //2
+
+
+//  console.log(+true);//1
+// console.log(+""); //0
+
+
+let val1, val2, val3
+val1 = val2 = val3 = 4*5
+console.log(val2) //Those all variable hold same value inside them.
+
+let aGuessNum = 99
+++aGuessNum; 
+aGuessNum++;
+//this mean that this hold variables value to add 1
+// console.log(aGuessNum);
+
+
+
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+
+
+//=============FOR MY PRACTICE==================
+
+
 
 
 // node 01_basics/03_conversionOperation.js
