@@ -42,12 +42,9 @@ so i tried to reveal the typeof of every variables value.like name value,age val
   
 
 /*  
+----------FOR MY PRACTISE---------
+++++++++++++++DATA TYPES SYMMERY+++++++++++++++=
 
-node 01_basics/02_dataTypes.js
-
-for run
-FOR MY PRACTISE
-DATA TYPES SYMMERY 
 there is two types of data types
 
 1.premitive
@@ -63,11 +60,17 @@ bigInt)
 obejects
 function
 )
-
-STACK AND HEAP MEMORY
+ 
+===========STACK AND HEAP MEMORY============
 
 MEMORY IS TWO TYPES
 1.STACK => PREMITIVE => THIS IS ONE TYPES OF COPY
 2. HEAP => NON-PREMITIVE => THIS IS A REFERENCCE TYPES
-[This is a theory topic if better knowing on thhis then go to the documentation]
+[This is a theory topic if better knowing on this then go to the documentation]
 
+
+
+
+
+
+node 01_basics/02_dataTypes.js
