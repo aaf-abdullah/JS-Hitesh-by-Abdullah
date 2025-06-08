@@ -54,4 +54,6 @@ console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 
 
 
+//for extra known about math and nu,s go to browser.
+
 // node 01_basics/06_nums_and_maths.js
