@@ -28,14 +28,51 @@ const newArray = myHeros.join() //this join mehtods converted array to string wi
 
 //console.log('ABC ', myHeros); // ABC  [ 'batman', 'thor', 'loki', 'joker' ]
 const myNewArray1 = myArray1.slice(1, 3) //this method say us start with 1 and dont include 3.
-console.log(myNewArray1);
-console.log('b', myArray1);
+// console.log(myNewArray1);
+// console.log('b', myArray1);
 
 const myNewArray2 = myArray1.splice(2, 6) //so this method actuallly change the array.if we discuss first the condition we given,basis on this the array extract the main array,and basis on this conditiion what we given in condition they add an array.
-console.log('c', myArray1);
-console.log(myNewArray2);
+//console.log('c', myArray1);
+//console.log(myNewArray2);
+
+
+//==================ARRAY-2=====================
+
+
+const marvel_superHeros = ['thor', 'ironman',  'spiderman' ]
+const dc_superHeros = ['superman', 'batman', 'flash']
+
+//console.log(marvel_superHeros.push(dc_superHeros))//this is counting how many array element on this array,and push is count 1 array elemnt.
+marvel_superHeros.push(dc_superHeros)//this push is doing same things add array inside the another array.//[ 'thor', 'ironman', 'spiderman', [ 'superman', 'batman', 'flash' ] ]
+// console.log(marvel_superHeros);
+// console.log(marvel_superHeros[3][2]);
+
+const allHeros = marvel_superHeros.concat(dc_superHeros)
+// console.log(typeof allHeros);//object
+ //console.log(allHeros);
+
+const allNewHeros = [...marvel_superHeros, ...dc_superHeros]
+//console.log(allNewHeros); 
+//this concat and ... those doing same thing 
+
+const anotherArray = [1, 2, 3,[4, 5, 6], 7, [6, 7,[4, 5]]]
+const anotherRealArray = anotherArray.flat(Infinity) //this mehtod converted complex array to a simple array.
+//console.log(anotherRealArray);
+
+
+// console.log(Array.isArray('adiba neha'));
+// console.log(Array.from("abdllah fahim"));//this mehtod converted all word to a string in a a array with space.
+// console.log(Array.from({name: 'insiya'})); //[]
+
+let score1 =200
+let score2 = 300
+let score3 = 400
+
+console.log(Array.of(score1, score2,score3)); //so this method converted all variables into a single array.
 
 
 
+
+//=========further known about array go to browser instead===========
 
 // node 02_basics/01_array.js
