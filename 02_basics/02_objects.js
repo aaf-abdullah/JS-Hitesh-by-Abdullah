@@ -46,7 +46,17 @@ JsUser.greetingTwo = function(){
 
 
 
+
+
+
+
 //================PART-2======================
+
+
+
+
+
+
 
 //how to declare a object in constructor singleton
 
@@ -58,6 +68,13 @@ tinderUser.name = 'binod'
 tinderUser.isLoggedIn = false
 
 //console.log(tinderUser);
+
+// console.log(Object.keys(tinderUser)); //this keywords access the obejcts keys in array form. 
+// console.log(Object.values(tinderUser)); //this keywords access the objects values in array form.
+// console.log(Object.entries(tinderUser)); // this keywords is access the every  keys and values in one array and hold all key values at once array.
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //this types od acces also happen
+
+
 
 const regulerUser = {
     email: 'binod@google.com',
@@ -86,10 +103,55 @@ const obj6 = {...obj1, ...obj2, ...obj3} //this doing same things what assign ca
 //console.log(obj6);
 
 
+//=====
+const newUsers = [
+    {
+        id: 001,
+        email: 'bonita@laisla.com'
+    },
+    {
+        id: 002,
+        email: 'bonita2@gmail.com'
+    },
+    {
+        id: 003,
+        email: 'bonita3@goggle.com'
+    },
+]
+console.log(newUsers[001].email);//to access the exact data .
+
+
+
+//======
+const mycourse = {
+    coursename: 'js hindi by hitesh',
+    price: '999',
+    courseInstructor: 'hitesh bruh'
+}
+mycourse.courseInstructor
+
+const {courseInstructor: instructor} = mycourse
+//console.log(courseInstructor);
+//console.log(instructor);
+
+/*=======
+{
+    'name': 'mathmatics'
+    'coursename': 'math fundamental'
+    'price': 'free'
+}
+
+
+//====
+[
+    {},
+    {},
+    {},
+    {}
+]
 
 
 
 
-
-
-// node 02_basics/02_objects
+for furher info you definately check out to the browser.
+*/// node 02_basics/02_objects
