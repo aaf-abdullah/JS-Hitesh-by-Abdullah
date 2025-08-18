@@ -16,7 +16,9 @@ myArray1.push('hey cutie') //push is the methods of adding elements in array.
 //myArray2.shift(4) //remove thhe first element.
 //console.log(myArray1);
 //console.log(myArray2);
+
 //console.log(myArray1.includes(5)); //this method check the element in array if doesnt then false,if does then true.
+
 //console.log(myArray1.indexOf(0));//so this is actually doing basis on the condition we given,they gave us what position the array element is.
 
 const newArray = myHeros.join() //this join mehtods converted array to string with same values.
@@ -27,7 +29,7 @@ const newArray = myHeros.join() //this join mehtods converted array to string wi
 //slice and splice
 
 //console.log('ABC ', myHeros); // ABC  [ 'batman', 'thor', 'loki', 'joker' ]
-const myNewArray1 = myArray1.slice(1, 3) //this method say us start with 1 and dont include 3.
+const myNewArray1 = myArray1.slice(1, 3) //this method say us start with 1 and dont include 3.slice(start, end)
 // console.log(myNewArray1);
 // console.log('b', myArray1);
 
@@ -68,7 +70,20 @@ let score1 =200
 let score2 = 300
 let score3 = 400
 
-console.log(Array.of(score1, score2,score3)); //so this method converted all variables into a single array.
+//console.log(Array.of(score1, score2,score3)); //so this method converted all variables into a single array.
+
+
+
+
+
+//===========practise and chatgpt===========
+
+const siuu = [ 1, 2, 3,4]
+siuu.shift(3)
+// console.log(siuu)
+// console.log(siuu.indexOf(1))
+const messi = siuu.slice(1, 4)
+console.log(messi)
 
 
 
