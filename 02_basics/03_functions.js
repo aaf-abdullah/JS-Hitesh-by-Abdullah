@@ -82,7 +82,6 @@ function loginUserMassege2(username){
 
 
 
-
 function loginUserMessage3(username = "sam"){
     if(!username){
         console.log("PLease enter a username");
@@ -95,7 +94,9 @@ function loginUserMessage3(username = "sam"){
 
 
 
-//FUNCTION WITH OBJECTS
+
+
+//FUNCTION WITH too MANY PARAMETERS NEEDED
 
 function calculateCartPrice1(num1){
     return num1
@@ -113,14 +114,13 @@ console.log(calculateCartPrice2(200, 499,400, 600)) /// [400, 600] bcz of val1 a
 
 
 
-
 //HOW TO PASS THE OBJECT IN FUNCTION
 
 const user = {
     username: "hitesh",
-    prices: 199 //if we change the name prices then the issue was created as undfined
+    prices: 199 //Username is hitesh and price is undefined | if we change the name prices then the issue was created as undfined
 }
-function handleObject(any){//so this is a gneric wa if 
+function handleObject(anyobject){//so this is a gneric wa to pass the objec if we use user as a parameter then this could be error. 
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);//Username is sam and price is 399
 }
 
@@ -133,6 +133,16 @@ handleObject({
 
 
 
+//ARRAY IN FUNCTIONS
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){ //similerly a generic form getArray but not the name myNewArray cz this is a error
+    return getArray[3]
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
 
 
 
