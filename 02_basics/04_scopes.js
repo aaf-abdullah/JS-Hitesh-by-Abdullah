@@ -106,7 +106,7 @@ addTwo(5) // this is another way to function declaration | in this type of funct
 
 
 
-
+//this concept is apply on hoisting 
 
 
 //node 02_basics/04_scopes.js
