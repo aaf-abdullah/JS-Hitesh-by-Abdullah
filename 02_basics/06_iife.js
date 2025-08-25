@@ -41,3 +41,10 @@ coffee1();
 
 
 //   node 02_basics/06_iife.js
+
+
+
+
+
+
+// 05:55:33 -  How does javascript works behind the scene | so here is some browser works you would like see yourself
