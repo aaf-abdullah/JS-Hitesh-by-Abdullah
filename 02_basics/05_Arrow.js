@@ -1,7 +1,5 @@
 
 
-
-
 const user = { //current context inside the curley bracis
     username: "hitesh",
     price: 999,
