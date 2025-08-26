@@ -1,9 +1,11 @@
 //FOR LOOP
 
+
 for (let index = 0; index < 10; index++) {
     const element = index;
     //console.log(element);
 } //and here is the element doesnt access the global scope.bcz of block scopes
+
 
 //when we use for loop first of all we initialize the variables,and then cheacking the condition,if condition is true then execution the block element value. and when then execution is end,again its increases or decreases the index value .and continue so on
 //another problem is if index value is doesnt change then loop is run inifite times
