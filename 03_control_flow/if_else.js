@@ -1,16 +1,11 @@
 //if statement
 
-
 if (true) {
     //if condition is true then if run but if condition is false the condition doesnt run if.
 }
 
 
-
-
-
 //compare value, > greater than | < less than | <= | == checking is equal or not, != not equual,  === checking the  data type also (2 === '2')
-
 
 
 
@@ -36,7 +31,6 @@ if (score > 100) {
 
 
 
-
 //implicit code doesnt reccomended 
 
 const balance = 1000
@@ -57,7 +51,7 @@ if (balance > 500) {
 }
 
 
-
+//MULTIPLE CONDITION CHECKING
 
 const UserLoggedIn = true
 const debitCard = true
@@ -75,6 +69,34 @@ if (loGGedInFromGoogle || loGGedInFromEmail) {
     console.log('user logged in');
     // so this || is check same multiple condition check if one statement is true than if is executed.
 }
+
+
+
+
+
+//Nullish coalascing operator (??): null ,undefined
+
+let val1;
+val1 = 5 ?? 10 //5
+val1 = null ?? 10//10
+val1 = undefined ?? 10 //10
+
+
+console.log(val1);//5
+
+
+
+
+//Terniary Operator.
+
+//condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log('less than 80'); : console.log('more than 80');
+
+
+
+
 
 
 // node 03_control_flow/if_else.js
