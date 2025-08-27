@@ -159,9 +159,64 @@ const mNums2 = myNumbers
         .map( (num) => num * 7)
         .map( (num) => num + 1 )
         .filter( (num) => num >= 33)
-    console.log(mNums2);
+    //console.log(mNums2);
     
 
+
+
+    
+
+
+//REDUCE METHOD
+
+const myNumbers2 = [1, 2, 3]
+
+const myTotal = myNumbers2.reduce( function(acc, curval) {
+   // console.log(`accumulator value is: ${acc} and current value is ${curval}`)
+    return acc + curval
+} , 6)
+
+    //console.log(myTotal)
+
+const myTotal2 = myNumbers2.reduce( (acc, curval) => {
+    return acc + curval} , 2
+        )
+    //console.log(myTotal2)
+
+
+const myTotal3 = myNumbers2.reduce((acc, curval) => (acc + curval), 0)
+//console.log(myTotal3)
+
+const myTotal4 = myNumbers2.reduce((acc, curval) => acc + curval, 0)
+//console.log(myTotal4)
+
+
+
+
+//example
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+
+const totalPrice = shoppingCart.reduce( (acc, item) => acc + item.price,0)
+console.log(totalPrice)
 
 
 
