@@ -14,4 +14,40 @@ The DOM (Document Object Model) is a programming interface for web documents. It
 Think of DOM as a bridge between web pages (HTML/CSS) and programming (JavaScript).
 
 
-![alt text](https://github.com/aaf-abdullah/JS-Hitesh-by-Abdullah/blob/c60721cd7135c309f0b379396eebf49119712cdf/Screenshot%202025-08-28%20115638.png)
+***
+
+![DOM TREE](https://github.com/aaf-abdullah/JS-Hitesh-by-Abdullah/blob/c60721cd7135c309f0b379396eebf49119712cdf/Screenshot%202025-08-28%20115638.png)
+
+
+---
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Introduction</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id = 'title' class = 'heading'>DOM Learning on chai aur code<span style="display: none;">Text Added</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptates ab placeat, animi sequi nemo quidem temporibus iusto. Dolorum voluptas asperiores reprehenderit! Aut, quisquam soluta voluptas ea voluptatem ullam quae?</p>
+    </div>
+</body>
+</html>
+
+
+```
+
+***
