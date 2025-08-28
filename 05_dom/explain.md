@@ -14,3 +14,4 @@ The DOM (Document Object Model) is a programming interface for web documents. It
 Think of DOM as a bridge between web pages (HTML/CSS) and programming (JavaScript).
 
 
+![alt text](https://github.com/aaf-abdullah/JS-Hitesh-by-Abdullah/blob/c60721cd7135c309f0b379396eebf49119712cdf/Screenshot%202025-08-28%20115638.png)
