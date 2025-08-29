@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT AND REMOVE DOM</title>
+</head>
+<body style="background-Color : #212121; color:#fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+
+
+    //ADDING another list item on html with function declare,suitable IN   other programming language
+
+//1st approces
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+addLanguage('python')
+addLanguage('ruby')
+//this way is problem bcz of the travercing of the tree.always travercing the whole list to add the list
+
+
+
+//2nd aprroces same as 3rd,just not declare the variable
+function addOptiLanguage(langName){
+    const li = document.createElement('li')
+    const addText = document.createTextNode(langName)
+    li.appendChild(addText) //in next funnction we doing thhe same things but not holding the varible insted of put the value
+}
+
+
+//3rd approces
+function addOptiLanguage(langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage('golanng') //same as previous one but this is not travercing the whole dom tree,called optimized way
+
+
+
+
+//EDITING THE VALUE
+
+const secendLang = document.querySelector('li:nth-child(2)')
+//secendLang.innerHTML = 'mommo'
+
+const newLi = document.createElement('li')
+newLi.textContent = 'hitesh'
+secendLang.replaceWith( newLi)
+
+
+const firstLang = document.querySelector('li:first-child')
+firstLang.outerHTML = '<li>cursor</li>'
+
+
+
+//REMOVING THE VALUE
+
+const lastLang = document.querySelector('li:last-child')
+
+lastLang.remove() //remove that selected value
+
+
+
+
+</script>
+</html>
