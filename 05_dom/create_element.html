@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element with Abdullah</title>
+</head>
+<body style="background-Color : #212121; color:#fff;">
+    
+</body>
+<script>
+
+    const div = document.createElement('div')//created a div element in the browser
+    console.log(div);
+    div.className = 'hitesh'
+    //div.id = 'myId'
+    div.id = Math.round(Math.random() *10 + 1) //just for fun for adding id
+    //so these attribute is by defoult available in js but if i set the cutom attribute here is the process
+    div.setAttribute( 'title', 'generated title')//directly replce the attribute, no selected om here.
+
+    div.style.backgroundColor = 'blue' 
+    div.style.padding = '22px'
+//so still doesnt show the element we created,bcz of this element is still in a memory but not in he web page or document,
+
+
+
+//div.innerText = 'go go abdullah go' //so we say the inner text is over write the values || first select the reference and tak and then over write it.
+
+
+// so className id is first the value was selected and then take the value then the value is replace. on the other hand || setAttribute direct the replace the atribute || so many developer suggest 
+
+
+const addText = document.createTextNode('javascript with abd') //so we move the new processs where we create a text node instead of using innertext etc.| andd then adding the node inside div element
+div.appendChild(addText) //adding the text inside the div
+
+//here is two approces are right.innertext and createnodetext
+
+document.body.appendChild(div) //so this is showing the web pages after what we doing inside the div element is shown
+
+
+
+
+//SOME SELF PRACTISE WHAT HITESH SAYING IN CLASS MUST//
+
+
+
+
+</script>
+</html>
