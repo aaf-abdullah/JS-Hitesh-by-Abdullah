@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM || Chai Aur Code</title>
+</head>
+<body style="background-Color : #212121; color:#fff;">
+    <div class="parent">
+        <!-- this is comment-->
+        <div class="day">saturday</div>
+        <div class="day">sunday</div>
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent); //so after doing this,we got the whole div in browser 
+    // console.log(parent.children); //we got html collection of the all div have in parent
+    // console.log(parent.children[1]); //so access the element like an array.
+    // console.log(parent.children[1].innerHTML); //sunday
+
+    for (let i = 0; i < parent.children.length; i++) {
+       // console.log(parent.children[i].innerHTML) 
+    }
+
+    parent.children[3].style.color = 'blue'
+
+
+    //so this is movieng actually parent to child
+
+    //console.log(parent.firstElementChild); // afer this the whole saturday div is selected
+    //console.log(parent.lastElementChild); // we got the last div of the parent element is selected
+
+
+    const dayOne = document.querySelector('.day') //we know this is select the first element div
+    //console.log(dayOne);
+    //console.log(dayOne.parentElement); // so selected the whole parent div
+    //console.log(dayOne.nextElementSibling); //
+
+
+
+    console.log('NODES', parent.childNodes); //we got the NODELIST  of the parent text,SUPRISINGLY HERE IS also count the text type element that we dont write, acually this is the space of we enter the div to wrote next div.and its count only one space . react childNodes is maybe using this 
+
+
+//this called it traversing
+
+    
+
+    
+</script>
+</html>
