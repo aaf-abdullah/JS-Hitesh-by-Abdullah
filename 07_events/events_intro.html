@@ -19,10 +19,119 @@
    </div>
 </body>
 <script>
-//so first event is a work,like clicking the mouse,scrolling the mouse, etc
+ //in js all events are run sequentially,but some exception is here in js and one of is is events
+//so first event is a work,like an activity,like clicking the mouse,scrolling the mouse,key tap, etc
 
 
-//so 1st approces of event is direclty write in the html code like onClick='hitesh' wrote inside the html tag
+//so 1st approces of event is direclty write in the html code like onClick='hitesh("dont click i am shy")' wrote inside the html tag
+
+
+
+//2ns approches
+
+document.getElementById('owl').onclick = function(){
+   // alert("clickd to owl")
+}//this also good and bad || some featuers is lacking
+
+
+
+
+//what is the difference between selcet id or a class
+
+
+//3rd approche(best one) //
+//document.getElementById('owl').addEventListener('click', function(){}, false)
+
+// document.getElementById('owl').addEventListener('click', function(){
+//     alert('owl clicked again')
+// })
+
+
+
+
+//4th approches //attachevent() //in early time 
+// jQuery - onevnetListner
+
+
+
+//event Object
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//      console.log(e);
+// }, false )
+
+
+//interview question---create a application if a user in a body or a image or somewhere else clicking ,then tell me the time?
+// intervview question --- create a application where a div ,and whereverr i click in the div, here is create a circle
+
+
+//type ,timestamp, defoultprevented,target,toElement,srcElement,currentTarget
+//interview related-- clientX,clientY,screenx,screenY //position related
+//altkey,ctrkey,shiftkey,keycode,
+
+
+
+
+
+//EVENT PROPOGOTION --two context one is event bubbling(market),event ccapturing
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//      console.log(e);
+// }, false )
+
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//      console.log('clieckd inside the ul');
+// }, false ) //without false parameters pass the output will  be same bcz of the defoult value
+// document.getElementById('owl').addEventListener('click', function(e){
+//      console.log('owl cliecked');
+// }, false )
+// //so this is actually event propogation and context is event bubbling,its going bottom to top
+
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//      console.log('clieckd inside the ul');
+// }, false ) //without false parameters pass the output will  be same bcz of the defoult value
+// document.getElementById('owl').addEventListener('click', function(e){
+//      console.log('owl cliecked');
+//     e.stopPropagation( ) //so my event not bubbling,and not follow the bootom to top approhes.
+// }, false )
+// //so this is actually event propogation and context is event capturing ,capturing going through the top to bottom 
+
+
+// document.getElementById('google').addEventListener('click', function(e){
+//         e.preventDefault() //
+//         e.stopPropagation()
+//     console.log('google click');
+// }, false)
+// //
+
+
+
+
+
+
+//HOW I DELETE THE PHOTOS,IF I CLICK THE LI ITEM
+
+
+document.querySelector("#images").addEventListener( 'click', function(e){
+    console.log(e.target.parentNode);//this is tell us hich event occur the value,which element clicked is reference we get
+    console.log(e.target.tagName)
+    if (e.target.tagName === 'IMG'){
+        console.log(e.target.id)
+          let removeIt = e.target.parentNode
+        removeIt.remove() //1st approches
+    }
+    
+  
+    removeIt.remove() //1st approches
+    //removeIt.parentNode.removeChild(removeIt)//2nd approches
+
+})
+
 
 
 
