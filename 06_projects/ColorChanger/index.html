@@ -38,6 +38,23 @@
         <span>to change the background color of this page!</span>
       </h2>
     </div>
-    <script src="colorChanger.js"></script>
+    <script >
+      //src="colorChanger.js"
+
+         const buttons = document.querySelectorAll('.button')
+        const body =document.querySelector('body')
+
+        buttons.forEach( function (btn){
+
+           btn.addEventListener('click', function(e){
+              if(e.target.id === 'grey'){
+                body.style.backgroundColor = 'grey'
+              }
+          })
+
+        })
+
+
+    </script>
   </body>
 </html>
