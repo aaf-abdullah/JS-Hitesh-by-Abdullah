@@ -33,7 +33,7 @@
       <span class="button" id="white"></span>
       <span class="button" id="blue"></span>
       <span class="button" id="yellow"></span>
-      <h2>
+      <h2 class="hi">
         Try clicking on one of the colors above
         <span>to change the background color of this page!</span>
       </h2>
@@ -41,18 +41,40 @@
     <script >
       //src="colorChanger.js"
 
-         const buttons = document.querySelectorAll('.button')
-        const body =document.querySelector('body')
 
-        buttons.forEach( function (btn){
+const body = document.querySelector('body')
+const buttons = document.querySelectorAll('.button')
+ const H2 = document.querySelector('h2')
+const h1 =document.querySelector('h1')
 
-           btn.addEventListener('click', function(e){
-              if(e.target.id === 'grey'){
-                body.style.backgroundColor = 'grey'
-              }
-          })
 
+buttons.forEach(function(btn){
+        btn.addEventListener('click', function(chai){
+           alert('you are just clicking the button.')
+          if(chai.target.id === 'grey'){
+            body.style.backgroundColor = 'grey'
+            H2.style.backgroundColor = 'orange'
+              h1.style.padding = '33px'
+              h1.style.backgroundColor = 'red'
+            h1.style.borderRadius='17px'
+              h1.innerHTML='you just clicked the grey button'
+          }
+
+          if(chai.target.id === 'yellow'){
+            body.style.backgroundColor = 'yellow'
+          }
+          if(chai.target.id === 'white'){
+            body.style.backgroundColor = 'white'
+          }
+          if(chai.target.id === 'blue'){
+            body.style.backgroundColor = 'blue'
+          }
         })
+})
+
+
+//idk some thought in my mind but i dont wwhere i think differently but i dont know how to apply those in this lovely project,like one things i think about if i declare any function outside and give the reference of this function,and i dont need the copy of all code repeated.but i didint apply it in this time,maybe in the near future.
+
 
 
     </script>
