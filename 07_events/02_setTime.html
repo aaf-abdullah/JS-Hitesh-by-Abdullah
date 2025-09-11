@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET TIME FUNCTION</title>
+</head>
+<body>
+    <h1>Chai  jAVASCRIPT</h1>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+
+
+     //so this is a window function ,available only on window.
+        setTimeout(function(){
+                  //  console.log('abdullah')
+        }, 2000) //so this function means that whatever inside this function will instantly not printed or not executed, its execute after some times base on the timer condition.
+
+
+    //GIVING REFERENCE 
+
+        const heyAbd = function (){
+            //console.log(`anda hey kya bae`)
+        }
+
+        const changeH1 = function(){
+        document.querySelector('h1')
+        .innerHTML= 'i changed the h1 using set time out function'
+        }
+
+        setTimeout(heyAbd, 2000)
+        const changeText = setTimeout(changeH1, 4000)
+
+         clearTimeout(changeText) //so this is doing where time is end up doing or changing something but this is stop this execution.
+
+
+         document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(changeText)
+            //console.log('STOPPED THE EXECUTION OF EVNETS')
+
+         })
+
+
+
+
+
+
+
+
+         //SET TIME INTERVAL
+
+         setInterval(function(){
+            //console.log('BRO IT IS PRINTED AGAIN AND AGAIN AFTER 4SEC')
+        }, 4000) //so set time out is doing one time after execution in certain time condition, but  in interval the function is execute repeatedly afterr time conndion
+
+
+        const sayDate = function(name ){
+            //console.log('name' , 'hello repeted execution' , Date.now());
+        }
+
+        const intervalID = setInterval(sayDate, 2000, 'abdullah')//holding a function in a variable,and give the reference in the time interval,and also we give the parameter, , after the time condition.
+        clearInterval(intervalID) //giving the reffence to the clear timeout fnction,its stop the whole function execution.
+
+
+
+
+
+
+
+
+        //self work 
+    
+
+//         const para = function(){
+//             document.querySelector('p').innerHTML='changed lorem epson para'
+//         }
+// setInterval(para, 2000);
+//     document.querySelector('#start').addEventListener('click', fucntion(){
+//     })
+
+
+// setInterval(function(){
+//  const startButton = document.querySelector('start')
+//  startButton.addEventListener('click', function(){
+//     document.querySelector('h1').innerHTML="changed"
+//  })
+// }, 2000)
+
+
+
+
+// document.querySelector('#start')
+// .addEventListener('click', function(){
+//     let interval2 = setInterval(function(){
+//         document.querySelector('p')
+//         .innerHTML='changed'
+//     },1000)
+//     return interval2
+// })
+
+
+// document.querySelector('#stop').addEventListener('click', function(){
+//     clearInterval(interval2) //not working
+// })
+
+
+
+
+
+
+
+
+</script>
+</html>
