@@ -191,15 +191,19 @@ getAllUsers2()
 
 
 
-//
+//UPPER ASYNC AWAIT WORK HANDLING ANOTHER WAY LIKE THIS
 
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then( (response)=>{
     return response.json()
 })
-.catch( () =>  console.log(error) )
+.then( (data) => {
+    console.log(data)
+})
+.catch( (error) =>  console.log(error) )
 
-promise.all   //yeah this is also available,
+
+
 
 
